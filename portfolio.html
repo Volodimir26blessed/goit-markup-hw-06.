@@ -327,10 +327,33 @@
           </li>
         </ul>
 
+
+
+
       </div>
 
 
+      <div class="footer-box-third">
 
+        <!-- форм нужно указывать обязательно что-бы данные пользователя были отправлены на сервер -->
+
+        <form class="js-speactr-form">
+          <label for="email" class="paragraph-footer-too">Подпишитесь на рассылку</label>
+
+
+          <div class="footer-too-posotoion">
+            <input class="entry-field" type="email" name="username" id="email" placeholder="Email" />
+            <button class="button-submit sudscride-button " type="submit">Подписаться <svg class="telegram" width="24px"
+                height="24px">
+                <use href="./images/icons.svg#icon-icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+
+
+        </form>
+
+      </div>
 
     </div>
 
@@ -340,7 +363,26 @@
 
   </footer>
 
+
+
+  <!-- путь к файлу js (для открытия и закрытия модалки) -->
   <script src="./js/modal.js"></script>
+
+
+
+  <!-- скрипт для моментальной отправки данных о пользователе на сервер -->
+  <script>
+    (() => {
+      document
+        .querySelector('.js-speactr-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`), );
+        });
+
+    })();
+  </script>
+
 
 </body>
 
