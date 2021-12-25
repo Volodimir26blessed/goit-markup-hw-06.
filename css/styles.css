@@ -300,13 +300,16 @@ border-bottom: 1px solid #ECECEC;
 
 .establishment-cards-wrap {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
 }
 
 
 
 .container-cards {
   background: #ffffff;
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-bottom: 30px;
   padding: 0;
@@ -537,8 +540,7 @@ button {
   /* padding:2px 40px 40px 40px; */
   position: relative;
 
-  padding: 40px 40px 518px 40px;
-
+  padding:40px;
 
   top: 50%;
   left: 50%;
@@ -805,7 +807,9 @@ margin-top: 25px;
 
 /* карточки товара */
 .card {
-  
+  display: block;
+  min-width: 100%;
+  height: auto;
   cursor: pointer;
 }
 
@@ -862,6 +866,7 @@ margin-top: 25px;
 .footer {
   padding: 60px 0;
   background: var(--color-footer);
+
 }
 
 .footer-logo {
@@ -1043,9 +1048,8 @@ color:var(--color-white);
   color: #FFFFFF;
 }
 .footer-box-last{
-  padding: 0px 0px 0px 70px;
+  margin-left: auto;
 }
-
 
 
 .title-network-list:not(:last-child) {
@@ -1056,8 +1060,9 @@ color:var(--color-white);
 .block-too{
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  margin-left: auto;
+  /* justify-content: space-between;
+  margin-left: auto; */
+  
 }
 
 .title-network{
@@ -1087,7 +1092,9 @@ background-color: var(--color-accent);
 
 }
 
-
+.footer-box-third{
+  margin-left: auto;
+}
 /* позиционирование поля для ввода емайл */
 
 
